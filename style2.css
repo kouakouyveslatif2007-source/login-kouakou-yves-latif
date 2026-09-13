@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #181818;
+}
+
+/* BOÎTE DE CONNEXION */
+
+.login-box {
+    width: 420px;
+    padding: 50px 45px;
+
+    background: #303030;
+    border-radius: 25px;
+
+    border: 1px solid rgba(0, 255, 255, 0.08);
+
+    box-shadow:
+        0 0 10px rgba(0, 255, 255, 0.15),
+        0 0 30px rgba(0, 255, 255, 0.08);
+}
+
+/* TITRE */
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* INFORMATIONS ÉTUDIANT */
+
+.student-info {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.student-info strong {
+    display: block;
+
+    color: #00ffff;
+    font-size: 16px;
+
+    letter-spacing: 1px;
+}
+
+.student-info span {
+    display: block;
+
+    color: #bdbdbd;
+    font-size: 13px;
+
+    margin-top: 6px;
+}
+
+/* CHAMPS */
+
+.input-box {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.input-box input {
+    width: 100%;
+
+    padding: 12px 0;
+
+    background: transparent;
+
+    border: none;
+    border-bottom: 2px solid #ddd;
+
+    outline: none;
+
+    color: white;
+    font-size: 18px;
+}
+
+.input-box label {
+    position: absolute;
+
+    left: 0;
+    top: 10px;
+
+    color: #ddd;
+    font-size: 18px;
+
+    pointer-events: none;
+
+    transition: 0.3s;
+}
+
+/* EFFET QUAND ON CLIQUE */
+
+.input-box input:focus {
+    border-bottom: 2px solid #00ffff;
+
+    box-shadow: 0 8px 12px -10px #00ffff;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+
+    top: -20px;
+
+    color: #00ffff;
+    font-size: 14px;
+}
+
+/* BOUTON */
+
+button {
+    display: block;
+
+    margin: 5px auto 0;
+
+    padding: 16px 55px;
+
+    border: none;
+    border-radius: 40px;
+
+    background: linear-gradient(
+        90deg,
+        #00d9ff,
+        #00ff88
+    );
+
+    color: #111;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 15px rgba(0, 255, 200, 0.3);
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+
+    box-shadow: 0 0 25px rgba(0, 255, 200, 0.5);
+}
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+
+    bottom: 20px;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 11px;
+}
+
+footer h5 {
+    margin-top: 4px;
+
+    color: #00cccc;
+
+    font-size: 11px;
+}
